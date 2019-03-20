@@ -18,6 +18,7 @@ public class CorrigirAMP : MonoBehaviour
 
     public void corrigeAMP()
     {
+        Basic.atualizarInformacoes();
         String respostas_naocortadas = getText();
         string[] arrayrespostas = GetterSetter.getArray(respostas_naocortadas);
         //Iniciando a correção

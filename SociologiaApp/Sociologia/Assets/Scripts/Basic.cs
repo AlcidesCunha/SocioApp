@@ -15,6 +15,12 @@ public class Basic : MonoBehaviour
         
     }
 
+    public static void atualizarInformacoes()
+    {
+        LerArquivo ler = new LerArquivo();
+        gabarito = ler.lerGabarito();
+        dificuldade = ler.lerDificuldade();
+    }
     // Update is called once per frame
     void Update()
     {
